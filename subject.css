@@ -1,0 +1,60 @@
+/* 
+Some color references:
+RGB 213, 0, 50 - UIC RED
+RGB 0, 181, 226 - UIC CYAN
+RGB 0, 30, 98 - UIC NAVY-BLUE
+*/
+#main1 {
+  text-align: center;
+}
+
+:root {
+  --background_color: #EDF4F0;
+}
+.col-md-12{
+  background-color: var(--background_color);
+}
+html {
+  background-color: var(--background_color);
+}
+
+button {
+  background-color: #325050;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  margin-top:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  max-width: 75%;
+}
+button:hover {
+  background-color: rgb(116, 207, 156);
+}
+
+#full_test_button {
+  background: rgb(95, 57, 100)
+}
+#full_test_button:hover {
+  background: rgb(158, 0, 179)
+}
+
+#test_button {
+  margin: 10px;
+}
+
+body {
+}
+
+#instruction {
+  font-family: Arial;
+  font-size: 32px;
+  text-align: center;
+}
+
+.spacer{
+  height: 10px
+}

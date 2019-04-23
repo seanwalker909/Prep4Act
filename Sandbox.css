@@ -1,0 +1,111 @@
+/* References used are on the bottom */
+
+:root{
+  --multiple_choice_unselected: rgb(216, 216, 216);
+  --multiple_choice_hover1: rgb(189, 189, 189); /*highlight answer on hover*/
+  --multiple_choice_hover2: rgb(228, 228, 228); /*highlight left icon on hover*/
+  --multiple_choice_selected1: rgb(200, 248, 185); /*selected answer*/
+  --multiple_choice_selected2: rgb(90, 207, 90); /*selected answer's bubble*/
+  --multiple_choice_selected3: rgb(255, 255, 255); /*selected answer's inner dot*/
+}
+
+/* This is the wrapper to test multiple things and distinguish their boundry */
+#box{
+  padding: 5px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+/* Hides default multiple choice */
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* contains the multiple choices */
+.container_radio { 
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* color of multiple choice circle when unchecked */
+.checkmark {
+  border-radius: 13px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 25px;
+  width: 25px;
+  background-color: var(--multiple_choice_unselected);
+}
+.container_radio:hover {
+  background-color: var(--multiple_choice_hover1);
+}
+.container_radio:hover input ~ .checkmark {
+  background-color: var(--multiple_choice_hover2);
+}
+.container_radio {
+  border: 2px solid black;
+}
+.container_radio input:checked ~ .checkmark { /*Marked answer bubbled*/
+  background-color: var(--multiple_choice_selected2); 
+}
+.container_radio:hover{
+  background-color: var(--multiple_choice_selected1);
+}
+.checkmark:after { /*hides the default radio button*/
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.container_radio .checkmark:after {
+ 	top: 8px;
+	left: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--multiple_choice_selected3);
+}
+
+button {
+  background-color: rgb(0, 30, 98);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px
+}
+
+button:hover {
+  background-color: rgb(42, 91, 206);
+}
+
+#intro {
+  font-family: Arial;
+  font-size: 64px;
+  text-align: center;
+}
+
+
+/* References */
+/*
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://www.w3schools.com/css/css3_borders.asp
+https://www.w3schools.com/css/css3_variables.asp
+*/

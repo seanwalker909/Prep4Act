@@ -1,0 +1,53 @@
+/* 
+Colors I used:
+RGB 213, 0, 50 - UIC RED
+RGB 0, 181, 226 - UIC CYAN
+RGB 0, 30, 98 - UIC NAVY-BLUE
+*/
+
+button {
+  background-color: #325050;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%; /* This is here since it doesn't seem to work in test_button */
+  max-width: 500px
+}
+
+#test_button {
+  width: 100%; /* This doesn't work for some reason */
+}
+#test_button:hover {
+  background-color: rgb(116, 207, 156);
+}
+
+#about_button {
+  width: 25%;
+  background-color: rgb(141, 35, 35);
+}
+#about_button:hover {
+  background-color: rgb(228, 49, 49);
+}
+
+#intro {
+  font-family: Arial;
+  font-size: 64px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  max-width: 350px;
+}
+
+html {
+  background-color: #EDF4F0;
+}
+.col-md-12 {
+  background-color: #EDF4F0;
+}

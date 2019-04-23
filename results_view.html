@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="pageFormat">
+
+<head>
+        <script src="results_view.js"></script>
+    <div class='menu'>
+        <ul class="breadcrumb">
+            <li><a href="main_menu.html">Main Menu</a></li>
+            <li id="breadcrumb_test"><a href="pract_mode_menu.html">Subjects</a></li>
+            <li>Test In Progress</li>
+        </ul>
+        <div class="right_header" id="Header">
+
+        </div>
+    </div>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="results_view.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js">
+    </script>
+    
+
+    <div class='menu'>Test Results
+    </div>
+
+    <h1 class=resultsHeader></h1>
+    <title>Results Page</title>
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item">Overall Score</div>
+            <div class="grid-item">55/60</div>
+        </div>
+    </div>
+    <!-- <h3>Q4: What is the Capital of Utah?</h3>
+        <h4>A). Arkansas <br> B). Austin <br> C). Provo <br> D). Salt Lake City</h4> -->
+
+    <div>
+        <h3 id="currentQuestion" class="questionString">Q4: What is the Capital of Utah?</h3>
+        <table class=answersTable>
+            <tr id="answerA" class="selectedAnswerRow">
+                <td>A)</td>
+                <td>Arkansas</td>
+            </tr>
+            <tr id="answerB">
+                <td>B)</td>
+                <td>Austin</td>
+            </tr>
+            <tr id="answerC">
+                <td>C)</td>
+                <td>Provo</td>
+            </tr>
+            <tr id="answerD" class="correctAnswerRow">
+                <td>D)</td>
+                <td>Salt Lake City</td>
+                <td style="background-color: default">
+                    <-- Correct Answer! </td> </tr> </table> <br />
+    </div>
+
+    <div class='sidebar' id="sidebar">
+        <div class="flex-contianer">
+            <div class="grid-item2"><button class="grid-item2" visibility="hidden" id="threeBack"
+                    onclick="nextQuestion(-3, 0)"></button></div>
+            <div class="grid-item2"><button class="grid-item2" visibility="hidden" id="twoBack"
+                    onclick="nextQuestion(-2, 0)"></button></div>
+            <div class="grid-item2"><button class="grid-item2" visibility="hidden" id="oneBack"
+                    onclick="nextQuestion(-1, 0)"></button></div>
+
+            <div class="current_question_border" id="currentQuestion">
+
+
+            </div>
+            <button class="grid-item2" id="oneForward" onclick="nextQuestion(1, 1)">2</button>
+            <button class="grid-item2" id="twoForward" onclick="nextQuestion(2, 1)">3
+            </button>
+            <button class="grid-item2" id="threeForward" onclick="nextQuestion(3, 1)">4</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+.pageFormat {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial;
+}
+
+.resultsHeader {
+    color: #325050;
+    text-align: center;
+    font-size: 50px;
+}
+
+.overallScoreHeader {
+    text-align: center;
+}
+
+.questionString {
+    font-size: 25px;
+}
+
+.answersTable {
+    font-size: 20px;
+}
+
+.answersTable td:nth-child(1) {
+    width: 15px;
+}
+
+.selectedAnswerRow {
+    background-color: orangered;
+}
+
+.correctAnswerRow {
+    background-color: limegreen;
+}
+
+.grid-container {
+    display: grid;
+    font-size: 35px;
+    grid-column-gap: 40px;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    justify-content: center;
+    border: 10px solid black;
+    width: 350px;
+    color: #325050;
+}
+
+.grid-container .grid-item:nth-child(2) {
+    font-size: 50px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    margin-right: 10%;
+}
+
+.buttonWrapper {
+    /* padding-left: 85%; */
+    right: 0px;
+    position: absolute;
+    margin-right: 10%;
+}
+
+.navButton {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 20px;
+    background-color: #325050;
+    border: none;
+    color: white;
+}
+
+.navButton:hover {
+    background-color: rgb(116, 207, 156);
+    cursor: pointer;
+  }
+
+  #Home {
+    color: black;
+    background-color: green;
+    font-size: 100%;
+    left: 0;
+    cursor: pointer;
+}
+
+html {
+    background-color: #EDF4F0;
+  }
+  .col-md-12 {
+    background-color: #EDF4F0;
+  }
+
+  .menu {
+    height: 100px;
+    background-color: rgba(138,188,159,0.5);
+    color: #325050;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.flex-contianer {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    border: 1px;
+
+    background: #edf4f0;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 200%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+.grid-item2 {
+    width: 110px;
+    height: 60px;
+    border-radius: 90%;
+    font-size: 19px;
+  }
+.current_question_border{
+    width: 300px;
+}
+
+  .flex-contianer {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    border: 1px;
+
+    background: #edf4f0;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 200%;
+}
+
+.sidebar {
+    height: 270px;
+    color: #325050;
+    background: #edf4f0;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 70%;
+}
+
+/*
+Breadcrumbs CSS guide followed: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp
+*/
+
+ul.breadcrumb {
+    margin-top: 20px;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgb(170, 170, 170);
+    text-align: left;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #2e8fe4;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #6117c2;
+    text-decoration: underline;
+  }
