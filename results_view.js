@@ -9,6 +9,10 @@ window.onload = function () {
     document.getElementById("answerB").textContent = answers[0][1];
     document.getElementById("answerC").textContent = answers[0][2];
     document.getElementById("answerD").textContent = answers[0][3];
+    
+    document.getElementById("oneBack").style.visibility = 'hidden';
+    document.getElementById("twoBack").style.visibility = 'hidden';
+    document.getElementById("threeBack").style.visibility = 'hidden';
 
 }
 
