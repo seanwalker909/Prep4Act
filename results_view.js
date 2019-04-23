@@ -10,6 +10,11 @@ window.onload = function () {
     document.getElementById("answerC").textContent = answers[0][2];
     document.getElementById("answerD").textContent = answers[0][3];
 
+    document.getElementById("oneBack").style.visibility = 'hidden';
+    document.getElementById("twoBack").style.visibility = 'hidden';
+    document.getElementById("threeBack").style.visibility = 'hidden';
+
+
 }
 
 var answers = [["1", "2", "3", "4"], ["2", "3", "4", "5"], ["3", "4", "5", "9"], ["4", "8", "6", "7"], ["5", "10", "11", "520"], ["1", "2", "3", "4"], ["1", "2", "3", "4"], ["1", "2", "3", "4"], ["1", "2", "3", "4"], ["1", "2", "3", "4"], ["1", "2", "3", "4"], ["1", "2", "3", "4"]];

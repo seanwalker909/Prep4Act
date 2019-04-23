@@ -52,7 +52,8 @@ window.onload = function () {
         document.getElementById("Header").textContent = 'ACT-Full Test-->Study Mode'
 
     }
-    document.getElementById("currentQuestion").textContent = 1;
+    document.getElementById("currentQuestion").textContent = "Question #1";
+    document.getElementById("currentQuestion").style.fontSize = "30px";
     document.getElementById("answerA").textContent = answers[currentQuestionIndex][0];
     document.getElementById("answerB").textContent = answers[currentQuestionIndex][1];
     document.getElementById("answerC").textContent = answers[currentQuestionIndex][2];
@@ -240,7 +241,8 @@ function nextQuestion(buttonOffset, direction) {
         //clearInterval(timeInterval)
         currentQuestionIndex = currentQuestionIndex + buttonOffset;
         checkifEnd(currentQuestionIndex);
-        currentQuestion.innerHTML = currentQuestionIndex + 1;
+        var x = currentQuestionIndex + 1;
+        currentQuestion.innerHTML = "Question #" + x;
 
         if (currentQuestionIndex + 1 - 3 > 0) {
             document.getElementById("threeBack").style.color = "black";
