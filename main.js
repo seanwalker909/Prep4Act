@@ -291,7 +291,7 @@ function nextQuestion(buttonOffset, direction) {
         {
             document.getElementById("twoBack").textContent = currentQuestionIndex - 1;
             document.getElementById("twoBack").style.color = "black";
-            document.getElementById("twoBack").style.visibility = 'visible';gith
+            document.getElementById("twoBack").style.visibility = 'visible';
             
         }
         else
