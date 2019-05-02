@@ -5,6 +5,8 @@ html {
 .menu {
     height: 100px;
     background-color: rgba(138,188,159,0.5);
+    
+
 }
 
 .sidebar {
@@ -20,7 +22,8 @@ html {
     color: #325050;
     background: #edf4f0;
     font-family: 'Libre Baskerville', sans-serif;
-    font-size: 70%;
+    font-size: 100%;
+    text-align: center;
 }
 
 .footer {
@@ -54,7 +57,7 @@ p.space {display: block;}
 
 .flex-contianer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 130px;
     border: 1px;
 
@@ -63,12 +66,7 @@ p.space {display: block;}
     font-size: 200%;
 }
 
-.current_question_border {
-    width: 110px;
-    font-size: 350%;
-    text-align: center;
-    position: relative
-}
+
 .clock {
     border-radius: 50%;
     background: #fff url('images/ios_clock.svg') no-repeat center;
@@ -127,7 +125,6 @@ p.space {display: block;}
 */
 .item {
     position: relative;
-    float: left;
 }
 
 .item h2 {
@@ -148,7 +145,7 @@ svg {
 }
 .right_header {
     color: #325050;
-    float: right;
+    float: center;
     font-size: 200%;
     font-family: 'Libre Baskerville', sans-serif;
 }
@@ -212,6 +209,11 @@ svg {
 #currentQuestionArea {
     font-size: 32px;
     color: #235050;
+    text-align: center;
+}
+
+#currentQuestion {
+    font-size: 64px;
 }
 
 .grid-container {
@@ -224,4 +226,9 @@ svg {
     padding: 3px;
     font-size: 30px;
     text-align: center;
+  }
+
+
+  #clock_container{
+      align-content: right;
   }
