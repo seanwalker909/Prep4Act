@@ -20,36 +20,36 @@ window.onload = function () {
     }
 
     if (c == 13) {
-        document.getElementById("Header").textContent = 'ACT-Math-->Timed Mode'
+        document.getElementById("Header").textContent = 'ACT-Math - Timed Mode';
     }
     if (c == 14) {
-        document.getElementById("Header").textContent = 'ACT-Reading-->Timed Mode'
+        document.getElementById("Header").textContent = 'ACT-Reading - Timed Mode'
     }
     if (c == 15) {
-        document.getElementById("Header").textContent = 'ACT-Science-->Timed Mode'
+        document.getElementById("Header").textContent = 'ACT-Science - Timed Mode'
     }
     if (c == 16) {
-        document.getElementById("Header").textContent = 'ACT-Full Test-->Timed Mode'
+        document.getElementById("Header").textContent = 'ACT-Full Test - Timed Mode'
     }
 
     if (c == 1) {
-        document.getElementById("Header").textContent = 'ACT-English-->Study Mode'
+        document.getElementById("Header").textContent = 'ACT-English - Study Mode'
     }
     if (c == 2) {
-        document.getElementById("Header").textContent = 'ACT-Math-->Study Mode'
+        document.getElementById("Header").textContent = 'ACT-Math - Study Mode'
     }
     if (c == 3) {
-        document.getElementById("Header").textContent = 'ACT-Reading-->Study Mode'
+        document.getElementById("Header").textContent = 'ACT-Reading - Study Mode'
 
     }
     if (c == 4) {
 
-        document.getElementById("Header").textContent = 'ACT-Science-->Study Mode'
+        document.getElementById("Header").textContent = 'ACT-Science - Study Mode'
 
     }
     if (c == 5) {
 
-        document.getElementById("Header").textContent = 'ACT-Full Test-->Study Mode'
+        document.getElementById("Header").textContent = 'ACT-Full Test - Study Mode'
 
     }
     document.getElementById("currentQuestion").textContent = "Question #1";
@@ -236,14 +236,14 @@ function goToBookmarkedQuestion(bookmarkIndex) {
 
 function nextQuestion(buttonOffset, direction) {
     var currentQuestion = document.getElementById("currentQuestion");
-    //update question buttons
-    if (direction) {
-        //clearInterval(timeInterval)
-        currentQuestionIndex = currentQuestionIndex + buttonOffset;
-        checkifEnd(currentQuestionIndex);
-        var x = currentQuestionIndex + 1;
-        currentQuestion.innerHTML = "Question #" + x;
 
+    currentQuestionIndex = currentQuestionIndex + buttonOffset;
+    var x = currentQuestionIndex + 1;
+    currentQuestion.innerHTML = "Question #" + x;
+    //update question buttons
+    if (direction) { //if the user pressed a next question button to go to a question X such that X is greater than the current question
+        //clearInterval(timeInterval)
+        checkifEnd(currentQuestionIndex);
         if (currentQuestionIndex + 1 - 3 > 0) {
             document.getElementById("threeBack").style.color = "black";
             document.getElementById("threeBack").textContent = currentQuestionIndex + 1 - 3;
@@ -275,9 +275,6 @@ function nextQuestion(buttonOffset, direction) {
         document.getElementById("threeForward").textContent = currentQuestionIndex + 4;
     }
     else {
-        //clearInterval(timeInterval)
-        currentQuestionIndex = currentQuestionIndex + buttonOffset;
-        currentQuestion.innerHTML = currentQuestionIndex + 1;
 
         if(currentQuestionIndex - 2 > 0)
         {
@@ -294,7 +291,8 @@ function nextQuestion(buttonOffset, direction) {
         {
             document.getElementById("twoBack").textContent = currentQuestionIndex - 1;
             document.getElementById("twoBack").style.color = "black";
-            document.getElementById("twoBack").style.visibility = 'visible';
+            document.getElementById("twoBack").style.visibility = 'visible';gith
+            
         }
         else
         {
