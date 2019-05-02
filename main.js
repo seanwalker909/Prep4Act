@@ -178,7 +178,7 @@ function goToBookmarkedQuestion(bookmarkIndex) {
     var currentQuestion = document.getElementById("currentQuestion");
     var currentQuestionBox = document.getElementById("currentQuestion");
     currentQuestionBox.innerHTML = "Question" + (bookmarkIndex + 1);
-    currentQuestion.innerHTML = currentQuestionIndex + 1;
+    currentQuestion.innerHTML = "Question " + currentQuestionIndex + 1;
 
     if (currentQuestionIndex + 1 - 3 > 0) {
         document.getElementById("threeBack").style.color = "black";
